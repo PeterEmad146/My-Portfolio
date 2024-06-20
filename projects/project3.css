@@ -1,4 +1,16 @@
-body, html {
+body {
+  background-image: url('..//assets/projects/Underconstruction.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+
+/* body, html {
     height: 100%;
     margin: 0;
     display: static;
@@ -101,4 +113,4 @@ body {
     color: blanchedalmond;
     line-height: 1.4;
   }
-  
+   */
