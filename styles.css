@@ -1,0 +1,528 @@
+body {
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#left-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    transform: translateY(60px);
+}
+
+#right-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#links {
+    transform: translateY(40px);
+}
+
+#links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#links li img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#links li img:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brexon';
+    src: url('assets/Brexon-Regular.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    color: #E26A2B;
+}
+
+#title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: #9bbdbd;
+}
+
+#sections {
+    text-align: left;
+    margin-top: 20px;
+    transform: translateY(20px);
+}
+
+#sections ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sections li {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-flex;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+#sections li:last-child {
+    margin-right: 0;
+}
+
+#sections a {
+    text-decoration: none;
+    color: #E26A2B;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+#sections a:hover {
+    background-color: #E26A2B;
+    color: #fff;
+}
+
+.div-to-scroll {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.div-to-scroll.visible {
+    opacity: 1;
+}
+
+footer {
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    transform: translateY(250px);
+}
+
+/* Copyright Text Styling */
+footer .copyright {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: #E26A2B;
+    margin: 0;
+    padding: 10px 0;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0A1012;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E26A2B;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9bbdbd;
+}
+
+#About {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px black;
+    margin-bottom: 20px;
+}
+
+#About h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #E26A2B;
+    margin-bottom: 10px;
+}
+
+#About p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 10px;
+    color: #D5D5D5;
+}
+
+#About img {
+    position: absolute;
+    max-width: 3.5%;
+    height: auto;
+    transform: translateX(600px) translateY(-60px);
+    border-radius: 10px;
+}
+
+
+#Experience {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px black;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#Experience h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #E26A2B;
+    margin-bottom: 10px;
+}
+
+#Experience p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+#exp-img {
+    position: absolute;
+    max-width: 3.5%;
+    height: auto;
+    transform: translateX(600px) translateY(-60px);
+    border-radius: 10px;
+}
+
+.skills-gained {
+    position: relative;
+    max-height: 38px;
+    margin: 15px;
+    left: 5%;
+    width: auto;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.jobs, .edu, .proj {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.proj {
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.proj:hover {
+    background-color: rgba(226, 106, 43, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.heading{
+    color: #E26A2B;
+    transition: color 0.5s ease-in-out;
+}
+
+.proj:hover .heading{
+    color: crimson;
+}
+
+.left {
+    flex: 0 0 120px;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 1 1 auto;
+}
+
+.date {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    word-wrap: break-word;
+    color: #9bbdbd;
+}
+
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #E26A2B;
+}
+
+.description {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0;
+    color: #d5d5d5;
+}
+
+.description ul li{
+    list-style-type: square;
+    margin: 10px;
+    word-spacing: normal;
+}
+
+#Projects {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px black;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#Projects h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #E26A2B;
+    margin-bottom: 10px;
+}
+
+#Projects p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.projects-links {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    font-size: inherit;
+    font-family: inherit;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: inline;
+}
+
+#Courses {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px black;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#Courses h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #E26A2B;
+    margin-bottom: 10px;
+}
+
+#Courses p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+#Courses img {
+    position: absolute;
+    max-width: 3.5%;
+    height: auto;
+    transform: translateX(600px) translateY(-60px);
+    border-radius: 10px;
+}
+
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.thumbnail {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #E26A2B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.thumbnail iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.thumbnail-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0A1012;
+    color: #E26A2B;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.thumbnail-caption:hover{
+    color: crimson;
+}
+
+.thumbnail iframe::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.thumbnail iframe::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+.thumbnail iframe::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#Education {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px black;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#Education h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #E26A2B;
+    margin-bottom: 10px;
+}
+
+#Education p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+#Education img {
+    position: absolute;
+    max-width: 3.5%;
+    height: auto;
+    transform: translateX(600px) translateY(-60px);
+    border-radius: 10px;
+}
+
+#Education .edu {
+    margin-bottom: 20px;
+}
+
+#Education .edu-date {
+    font-weight: bold;
+    color: #9bbdbd;
+}
+
+#Education .edu-spc {
+    font-size: 18px;
+    font-weight: bold;
+    color: #E26A2B;
+    margin-bottom: 5px;
+}
+
+#Education .edu-loc {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 1024px) {
+    #left-section {
+        width: 40%;
+        position: fixed;
+        transform: translateX(130px) translateY(60px);
+    }
+
+    #right-section {
+        width: 50%;
+        float: right;
+    }
+
+    footer {
+        position: relative;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1023px) {
+    #left-section,
+    #right-section {
+        width: 100%;
+        float: none;
+        position: relative;
+        transform: translateX(0) translateY(0);
+    }
+
+    footer {
+        position: relative;
+        transform: translateY(0);
+    }
+
+    #Education img {
+        display: none;
+    }
+
+    #Courses img{
+        display: none;
+    }
+
+    #About img {
+        display: none;
+    }
+    
+    #exp-img {
+        display: none;
+    }
+}

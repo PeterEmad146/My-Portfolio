@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: static;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #0D1117;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.heading{
+    color: rgb(198, 73, 98);
+    font-family: "Audiowide", sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: static;
+    align-content: center;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: #172130;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px rgb(198, 73, 98);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+  }
+  
+  .card img{
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(182, 57, 82);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #172130;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: blanchedalmond;
+    line-height: 1.4;
+  }
+  
