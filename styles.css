@@ -11,6 +11,7 @@ body {
 }
 
 #left-section {
+    margin-bottom: 20px;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -164,66 +165,36 @@ footer .copyright {
     background: #9bbdbd;
 }
 
-#About {
+.section {
+    position: relative;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 8px black;
     margin-bottom: 20px;
 }
 
-#About h2 {
+.sections-heading{
     font-family: 'Courier New', Courier, monospace;
     font-size: 28px;
     color: #E26A2B;
     margin-bottom: 10px;
 }
 
-#About p {
+.section-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 7%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-paragraph {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     line-height: normal;
     margin-bottom: 10px;
     color: #D5D5D5;
-}
-
-#About img {
-    position: absolute;
-    max-width: 3.5%;
-    height: auto;
-    transform: translateX(600px) translateY(-60px);
-    border-radius: 10px;
-}
-
-
-#Experience {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px black;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-#Experience h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 28px;
-    color: #E26A2B;
-    margin-bottom: 10px;
-}
-
-#Experience p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: #ccc;
-}
-
-#exp-img {
-    position: absolute;
-    max-width: 3.5%;
-    height: auto;
-    transform: translateX(600px) translateY(-60px);
-    border-radius: 10px;
 }
 
 .skills-gained {
@@ -239,14 +210,8 @@ ol {
     padding: 0;
 }
 
-.jobs, .edu, .proj {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    padding: 15px;
-}
-
-.proj {
+.proj, .edu, .jobs, .crs {
+    margin: 15px;
     padding: 15px;
     border-radius: 10px;
     transition: background-color 0.5s ease-in-out;
@@ -267,27 +232,11 @@ ol {
     color: crimson;
 }
 
-.left {
-    flex: 0 0 120px;
-    margin-right: 20px;
-}
-
-.right {
-    flex: 1 1 auto;
-}
-
 .date {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     word-wrap: break-word;
     color: #9bbdbd;
-}
-
-.heading {
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #E26A2B;
 }
 
 .description {
@@ -302,28 +251,6 @@ ol {
     word-spacing: normal;
 }
 
-#Projects {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px black;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-#Projects h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 28px;
-    color: #E26A2B;
-    margin-bottom: 10px;
-}
-
-#Projects p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: #ccc;
-}
-
 .projects-links {
     text-decoration: none;
     color: inherit;
@@ -335,36 +262,6 @@ ol {
     margin: 0;
     border: none;
     display: inline;
-}
-
-#Courses {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px black;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-#Courses h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 28px;
-    color: #E26A2B;
-    margin-bottom: 10px;
-}
-
-#Courses p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: #ccc;
-}
-
-#Courses img {
-    position: absolute;
-    max-width: 3.5%;
-    height: auto;
-    transform: translateX(600px) translateY(-60px);
-    border-radius: 10px;
 }
 
 .certificates-container {
@@ -425,57 +322,6 @@ ol {
     border-radius: 10px;
 }
 
-#Education {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px black;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-#Education h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 28px;
-    color: #E26A2B;
-    margin-bottom: 10px;
-}
-
-#Education p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: #ccc;
-}
-
-#Education img {
-    position: absolute;
-    max-width: 3.5%;
-    height: auto;
-    transform: translateX(600px) translateY(-60px);
-    border-radius: 10px;
-}
-
-#Education .edu {
-    margin-bottom: 20px;
-}
-
-#Education .edu-date {
-    font-weight: bold;
-    color: #9bbdbd;
-}
-
-#Education .edu-spc {
-    font-size: 18px;
-    font-weight: bold;
-    color: #E26A2B;
-    margin-bottom: 5px;
-}
-
-#Education .edu-loc {
-    font-style: italic;
-    color: #ccc;
-}
-
 /* Media Queries for Responsive Design */
 
 @media (min-width: 1024px) {
@@ -510,19 +356,7 @@ ol {
         transform: translateY(0);
     }
 
-    #Education img {
-        display: none;
-    }
-
-    #Courses img{
-        display: none;
-    }
-
-    #About img {
-        display: none;
-    }
-    
-    #exp-img {
+    .section-img {
         display: none;
     }
 }
