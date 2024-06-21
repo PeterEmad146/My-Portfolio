@@ -322,6 +322,24 @@ ol {
     border-radius: 10px;
 }
 
+#meta-logo{
+    height: 40px;
+    width: auto;
+    border-radius: 7.5px;
+}
+
+#penn-logo{
+    height: 50px;
+    width: auto;
+    border-radius: 7.5px;
+}
+
+#michigan-logo {
+    height: 40px;
+    width: auto;
+    border-radius: 7.5px;
+}
+
 /* Media Queries for Responsive Design */
 
 @media (min-width: 1024px) {
