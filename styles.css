@@ -378,3 +378,62 @@ ol {
         display: none;
     }
 }
+
+/* Transcript Table Styling */
+.transcript {
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px black;
+    padding: 20px;
+}
+
+.semester-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.semester-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.semester-content th, .semester-content td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #D5D5D5;
+}
+
+.semester-content th {
+    background-color: #0A1012;
+    color: #E26A2B;
+}
+
+.semester-content tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.semester-content tr:hover {
+    background-color: rgba(226, 106, 43, 0.3);
+}
+
+.transcript h2 {
+    cursor: pointer;
+    background-color: #0A1012;
+    color: #E26A2B;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.transcript h2:hover {
+    background-color: #E26A2B;
+    color: #fff;
+}

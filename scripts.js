@@ -36,3 +36,12 @@ function handleScroll() {
 document.addEventListener('DOMContentLoaded', handleScroll);
 // Check on scroll
 document.addEventListener('scroll', handleScroll);
+
+function toggleSemester(semesterId) {
+    var content = document.getElementById(semesterId);
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+}
