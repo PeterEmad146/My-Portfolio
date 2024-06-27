@@ -36,14 +36,15 @@ body {
 
 #links li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-top: 3px;
 }
 
 #links li img {
     width: 30px;
     height: 30px;
     vertical-align: middle;
-    margin-right: 10px;
+    margin: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -96,7 +97,7 @@ h1 {
 #sections li {
     font-family: 'Courier New', Courier, monospace;
     display: inline-flex;
-    margin-right: 15px;
+    margin: 5px;
     padding: 5px;
 }
 
@@ -383,7 +384,7 @@ ol {
 .transcript {
     width: 90%;
     margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     box-shadow: 1px 1px 8px black;
     padding: 20px;
