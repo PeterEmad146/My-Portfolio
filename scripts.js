@@ -45,3 +45,17 @@ function toggleSemester(semesterId) {
         content.style.maxHeight = content.scrollHeight + "px";
     }
 }
+
+// Select all project items
+const projectItems = document.querySelectorAll('.project-item');
+
+// Add click event listener to each project item
+projectItems.forEach(item => {
+    const heading = item.querySelector('.heading');
+    const description = item.querySelector('.description');
+
+    // Toggle description visibility on heading click
+    heading.addEventListener('click', () => {
+        description.classList.toggle('show');
+    });
+});

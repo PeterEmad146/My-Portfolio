@@ -219,7 +219,7 @@ ol {
 }
 
 .proj:hover {
-    background-color: rgba(226, 106, 43, 0.3);
+    background-color: rgba(7, 39, 66, 0.292);
     padding: 15px;
     border-radius: 10px;
 }
@@ -244,6 +244,46 @@ ol {
     font-family: 'Times New Roman', Times, serif;
     margin-top: 0;
     color: #d5d5d5;
+}
+
+.project-item .description {
+    opacity: 0; /* Initially hidden */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.project-item:hover .description {
+    max-height: 500px; /* Adjust max-height to fit your content */
+    opacity: 1; /* Smoothly make visible */
+}
+
+/* Additional styles for description */
+.project-item .description ul {
+    list-style-type: square;
+    margin: 10px;
+    word-spacing: normal;
+    color: #d5d5d5;
+}
+
+.project-item .description img.skills-gained {
+    max-height: 38px;
+    margin: 15px;
+    left: 5%;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover .description img.skills-gained {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
 }
 
 .description ul li{
